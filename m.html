@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internship Project - Mradul Tyagi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 30px;
+      color: #0d47a1;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #00796b;
+    }
+
+    ul {
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #0288d1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .profile-img {
+      margin-top: 15px;
+      width: 200px;
+      border-radius: 50%;
+      border: 3px solid #81d4fa;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0277bd;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌟 Internship Project(Task 1): Apex Planet</h1>
+      <p>by <strong>Mradul Tyagi</strong> | KIET Group of Institutions</p>
+      <!-- 👇 Custom image from gallery (same folder as HTML file) -->
+      <img src="mradul.jpg" alt="Mradul Tyagi" class="profile-img">
+    </header>
+
+    <main>
+      <section>
+        <h2>> About Me</h2>
+        <p>Hello! I'm Mradul Tyagi, currently studying at KIET.</p>
+        <p>Check out My College <a href="https://www.kiet.edu" target="_blank">KIET Group of Institutions</a></p>
+        <p>I am currently Intern at <a href="https://www.linkedin.com/company/apex-planet/" target="_blank">Apex Planet</a>.</p>
+      </section>
+
+      <section>
+        <h2>📚 What I’ve Learned</h2>
+        <ul>
+          <li>Created structured content with HTML</li>
+          <li>Designed layouts using CSS (colors, fonts, spacing)</li>
+          <li>Added interaction using JavaScript</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>🔗 My Contact Details</h2>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mradul-tyagi" target="_blank">Mradul Tyagi</a></p>
+        <p>Leetcode: <a href="https://leetcode.com/mishtiie/" target="_blank">Mradul Tyagi</a></p>
+      </section>
+
+      <button id="myButton">Message for you</button>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const button = document.getElementById('myButton');
+          button.addEventListener('click', function() {
+            button.textContent = 'Congratulations! Button Clicked! Have a Nice Day';
+          });
+        });
+      </script>
+    </main>
+
+    <footer>
+      <p>© 2025 Mradul Tyagi | Internship Project for Apex Planet</p>
+    </footer>
+  </div>
+</body>
+</html>
